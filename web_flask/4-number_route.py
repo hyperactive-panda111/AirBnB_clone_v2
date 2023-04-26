@@ -35,7 +35,7 @@ def py(text):
     return 'Python {}'.format(text)
 
 
-@app.route('number/<int:n>', strict_slashes=False)
+@app.route('/number/<int:n>', strict_slashes=False)
 def num(n):
     ''' Displays number if and only if n is an integer. '''
     return '{} is a number'.format(n)
